@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialBook</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/script.js">
+
+    
+</head>
+<body>
+    <nav>
+        <div class="left-nav">
+            <img src="images/logo.png" alt="logo" class="logo">
+            <ul>
+                <li><img src="images/notification.png" alt="notification"></li>
+                <li><img src="images/inbox.png" alt="inbox"></li>
+                <li><img src="images/video.png" alt="video"></li>
+            </ul>
+        </div>
+        <div class="right-nav">
+           <div class="search-bar">
+            <img src="images/search.png" alt="search">
+            <input type="text" placeholder="Search">
+           </div>
+           <div class="user-pic online" onclick="settingsmenutoggle()">
+            <img src="images/profile-pic.png" alt="profile pic">
+           </div>
+        </div>
+        <!-- setting menu -->
+        <div class="setting-menu">
+
+            <div id="dark-btn">
+                <span></span>
+            </div>
+            <div class="setting-menu-inner">
+                <div class="user-profile">
+                    <img src="images/profile-pic.png" alt="profile">
+                    <div>
+                        <p>Nick jones</p>
+                        <a href="#">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                    <div class="user-profile">
+                        <img src="images/feedback.png">
+                        <div>
+                            <p>Give Feedback</p>
+                            <a href="#">Help Us to improve</a>
+                        </div>
+                    </div>
+                <hr>
+                <div class="setting-link">
+                    <img src="images/setting.png" alt="setting" class="settings-icon">
+                    <a href="#">Settings & Privacy <img src="images/arrow.png" alt="arrow" width="10px"></a>
+                </div>
+                <div class="setting-link">
+                    <img src="images/help.png" alt="help" class="settings-icon">
+                    <a href="#">Help & Support <img src="images/arrow.png" alt="arrow" width="10px"></a>
+                </div>
+                <div class="setting-link">
+                    <img src="images/display.png" alt="display" class="settings-icon">
+                    <a href="#">Display & Accessibility <img src="images/arrow.png" alt="arrow" width="10px"></a>
+                </div>
+                <div class="setting-link">
+                    <img src="images/logout.png" alt="Logout" class="settings-icon">
+                    <a href="#">Logout <img src="images/arrow.png" alt="arrow" width="10px"></a>
+                </div>
+            </div> 
+        </div> 
+    </nav>
+
+    <div class="container">
+        <!-- left-sidebar------- -->
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="#"><img src="images/news.png" alt="news">Latest News</a>
+                <a href="#"><img src="images/friends.png" alt="friends">Friends</a>
+                <a href="#"><img src="images/group.png" alt="group">Group</a>
+                <a href="#"><img src="images/marketplace.png" alt="market palce">market place</a>
+                <a href="#"><img src="images/watch.png" alt="watch">Watch</a>
+                <a href="#">see more</a>
+            </div>
+        </div>
+        <!-- main-content------ -->
+        <div class="main-content">
+
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img src="images/upload.png" alt="upload">
+                    <p>Post story</p>
+                </div>
+                <div class="story story2">
+                    <img src="images/member-1.png" alt="member">
+                    <p>Alison</p>
+                </div>
+                <div class="story story3">
+                    <img src="images/member-2.png" alt="member">
+                    <p>Jack</p>
+                </div>
+                <div class="story story4">
+                    <img src="images/member-3.png" alt="member">
+                    <p>Amy</p>
+                </div>
+                <div class="story story5">
+                    <img src="images/member-4.png" alt="member">
+                    <p>John</p>
+                </div>
+            </div>
+
+
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="images/profile-pic.png" alt="profile">
+                    <div>
+                        <p>Nick jones</p>
+                        <small>Public</small>
+                    </div>
+                </div>
+
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder="what's on your mind,Nick?"></textarea>
+
+                    <div class="add-post-links">
+                        <a href="#"><img src="images/live-video.png" alt="video img">Live video</a>
+                        <a href="#"><img src="images/photo.png" alt="photo img">Photo/video</a>
+                        <a href="#"><img src="images/feeling.png" alt="feeling">Feeling/Activity</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png" alt="profile">
+                        <div>
+                            <p>Nick jones</p>
+                            <span>December 18 2022, 1:00 am</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas-fa-ellipsis-v"></i></a>
+
+                </div>
+                
+                <p class="cup">Argentina won the fifa 2022 world cup by beating france in tie breaker messi completes his trophy cabinet. <a href="#">#Vamos Argentina</a> <a href="#">#Hardluck france</a></p>
+                <img src="images/messi.png" alt="messi" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png" alt="like">50</div>
+                        <div><img src="images/comments.png" alt="comments">5</div>
+                        <div><img src="images/share.png" alt="share">5</div>
+
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png">
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png" alt="profile">
+                        <div>
+                            <p>Nick jones</p>
+                            <span>December 19 2022, 15:05 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas-fa-ellipsis-v"></i></a>
+            
+                </div>
+                <p class="cup">Hanging out with buddies <a href="#">#friends</a> <a href="#">#Happiness</a></p>
+                <img src="images/feed-image-3.png" alt="messi" class="post-img">
+            
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like.png" alt="like">60</div>
+                        <div><img src="images/comments.png" alt="comments">8</div>
+                        <div><img src="images/share.png" alt="share"></div>
+            
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png">
+            
+                    </div>
+                </div>
+            
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png" alt="profile">
+                        <div>
+                            <p>Nick jones</p>
+                            <span>December 10 2022, 10:00 am</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas-fa-ellipsis-v"></i></a>
+            
+                </div>
+                <p class="cup">Teamworks can help to complete the work easily  <a href="#">#office</a> <a href="#">#friends</a></p>
+                <img src="images/feed-image-1.png"  class="post-img">
+            
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like.png" alt="like">40</div>
+                        <div><img src="images/comments.png" alt="comments">12</div>
+                        <div><img src="images/share.png" alt="share">2</div>
+            
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png">
+            
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="load-more-btn">Load more</button>
+        </div>
+        <!-- right-sidebar -->
+        <div class="right-sidebar">
+        </div>
+    </div>
+    <div class="footer"><p>&#169; 2023 Abdul Wadoodh</p></div>
+    <script src="script.js"></script>
+</body>
+</html>
